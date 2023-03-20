@@ -2,9 +2,9 @@
 Options +FollowSymLinks
 RewriteEngine On
 #connect to DB
-SetEnv DB_HOST localhost
-SetEnv DB_NAME kepfeltolto2
-SetEnv DB_USER root
+SetEnv DB_HOST hostname
+SetEnv DB_NAME dbname
+SetEnv DB_USER dbuser
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^.*$ ./index.php
