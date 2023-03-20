@@ -2,9 +2,11 @@
 Options +FollowSymLinks
 RewriteEngine On
 #connect to DB
-SetEnv DB_HOST hostname
-SetEnv DB_NAME dbname
-SetEnv DB_USER dbuser
+SetEnv DB_HOST writeherehostname
+SetEnv DB_NAME writeheredbname
+SetEnv DB_USER writeheredbuser
+#if there is no password, you do not need to enter it
+#I do not set a password for localhost projects
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^.*$ ./index.php
