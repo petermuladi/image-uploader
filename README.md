@@ -1,4 +1,4 @@
-## 🖼Image Uploader
+# 🖼Image Uploader
 
 #### This is a simple web application written in PHP for uploading images and displaying them on a homepage. The application uses the PDO extension to connect to a MySQL database and handle database queries.
 
